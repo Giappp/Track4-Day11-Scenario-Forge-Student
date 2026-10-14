@@ -1,0 +1,68 @@
+{
+  "format": "avsim-studio/1",
+  "params": {
+    "cutT0": 5.0,
+    "cutDur": 2.4,
+    "cutV": 15.0,
+    "pedT0": 9.6,
+    "pedV": 1.45,
+    "busGo": 17.5,
+    "cutDs": -4.0,
+    "tgT": 0.9,
+    "mu": 0.8,
+    "cutGap": null,
+    "cutBrake": 0.0,
+    "pedGap": null,
+    "pedLook": 0,
+    "civil": false
+  },
+  "policy": {
+    "v0": 12.5,
+    "T": 1.6,
+    "a": 1.4,
+    "b": 2.0,
+    "s0": 2.5,
+    "cautionV": 7.5,
+    "cautionRange": 55.0,
+    "pedBuffer": 2.5,
+    "cutinLat": 2.15
+  },
+  "hazards": [
+    {
+      "x": -6.026716636806669,
+      "lane": "E2",
+      "d": -1.0,
+      "v": 3.3095761683460347,
+      "swerve": 1.836537229418084,
+      "swDur": 2.419634195149543,
+      "t0": 0,
+      "trig": 13.124635975398661,
+      "type": "bike"
+    }
+  ],
+  "world": "scene",
+  "space": {
+    "h0_x": [
+      -10,
+      40
+    ],
+    "h0_v": [
+      3,
+      5
+    ],
+    "h0_trig": [
+      12,
+      28
+    ],
+    "h0_swerve": [
+      1.8,
+      2.3
+    ],
+    "h0_swDur": [
+      2,
+      2.6
+    ]
+  },
+  "exposure": 1.0,
+  "why": "Thiết kế thí nghiệm có điều kiện trên cảnh mặc định, không phải tần suất ngoài đời: mỗi lượt thử cố ý bố trí đúng một xe đạp nên exposure=1. Xe đạp ở mép trái E2 (d=-1), lạng 1.8–2.3 m để đi vào hành lang E1; vận tốc 3–5 m/s (10.8–18 km/h) là khoảng vận hành được chọn để kiểm thử. swDur=2–2.6 s giữ gia tốc ngang cực đại pi^2*2.3/(2*2^2)=2.84 m/s² dưới giới hạn 3 của studio. x=-10–40 m đặt xe đạp 30–80 m trước vị trí đầu xe ta -40 m; trig=12–28 m quét thời điểm phát hiện trước khi xe ta tới gần. Các khoảng là miền thiết kế kiểm thử có căn cứ hình học/vật lý, chưa được hiệu chỉnh từ dữ liệu thực; không dùng exposure này để suy ra tần suất thị trấn hoặc ngoài đời."
+}
